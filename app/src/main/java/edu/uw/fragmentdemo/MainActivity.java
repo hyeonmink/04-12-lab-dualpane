@@ -11,11 +11,14 @@ public class MainActivity extends AppCompatActivity implements MoviesFragment.On
 
     private static final String TAG = "MainActivity";
 
+    private boolean orientation;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        orientation = findViewById(R.id.container_right).getVisibility();
 
         MoviesFragment fragment = (MoviesFragment)getSupportFragmentManager().findFragmentByTag("MoviesFragment");
         if(fragment == null) {

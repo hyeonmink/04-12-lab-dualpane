@@ -33,12 +33,29 @@
             />
     </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/container"
+    <LinearLayout
+        android:id="@+id/fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/inputLayout"
-        />
+        android:layout_below="@id/inputLayout">
+
+        <FrameLayout
+            android:id="@+id/container_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <FrameLayout
+            android:id="@+id/container_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
 
     <!--<fragment-->
         <!--android:id="@+id/fragment"-->

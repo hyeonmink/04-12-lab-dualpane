@@ -29,6 +29,8 @@ public class MoviesFragment extends Fragment {
 
     private String searchTerm; //the most recent term we searched for, for persistance
 
+
+
     //interface supported by anyone who can respond to my clicks
     public interface OnMovieSelectedListener {
         public void movieSelected(Movie movie);
